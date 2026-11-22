@@ -1,3 +1,92 @@
+# 🚀 Start Here — Use Claude Code FREE with FreeLLMAPI (AKai Guide)
+
+> **Urdu:** Ye guide batata hai ke Claude Code ko bilkul FREE mein kaise chalana hai — bina subscription, bina card. Har step number ke saath likha hai, koi step skip mat karna.
+>
+> **Forked from:** [tashfeenahmed/freellmapi](https://github.com/tashfeenahmed/freellmapi) (MIT License) — this fork is the same code, kept here for easy download.
+
+## What is this?
+
+FreeLLMAPI collects the free tiers of 87 providers (Google, Groq, Cerebras, Mistral, OpenRouter and more) behind ONE endpoint. Claude Desktop's hidden Developer Mode points at it — so Claude Code runs on free models, $0.
+
+## What you need
+
+- Windows PC (works on macOS / Linux too)
+- A Google account (free Gemini API key) and a Groq account (free key)
+- No card, no subscription, no cracked app
+
+## Setup — follow in order, skip nothing
+
+### Step 1 — Install Node.js FIRST
+
+1. Go to [nodejs.org](https://nodejs.org), click **Get Node.js**, download the Windows installer.
+2. Run it, accept the terms, Next, Next — **leave the checkbox on that screen EMPTY** — Next, Install.
+3. Node.js MUST be installed before FreeLLMAPI, otherwise the app will not run.
+
+### Step 2 — Install FreeLLMAPI
+
+1. Open the **Microsoft Store**, search **"Free LLM API"**, install it (~160 MB).
+2. Open the app — tabs: Chat, Models, Image, Video, Audio. Some providers are already on — no sign-up, no key needed for those.
+
+### Step 3 — Add two free API keys
+
+1. In the app, go to **Keys → Add key → Google AI Studio → Get API key**.
+2. Google AI Studio opens → **Create API key** → give it a name (e.g. "Claude") → Create → **Copy**. Never show your key to anyone.
+3. Paste it in the app → Add key → select all 15 Gemini models → Save.
+4. Again **Add key → Groq → Get API key** → Create API key → name it → choose **no expiration** → Submit → Copy → paste in the app → Add key → Save. 7 more models added.
+
+### Step 4 — Install Claude Desktop
+
+1. Go to [claude.com/download](https://claude.com/download) → Download for Windows → install.
+
+### Step 5 — Developer Mode (the key part)
+
+1. Open Claude. **Do NOT sign in.**
+2. Top-left menu → **Help → Troubleshooting → Enable Developer Mode**. A new **Developer** menu appears.
+3. **Developer → Configure Third-Party Inference**:
+   - Connection: **Gateway**
+   - Credential kind: **Static API Key**
+   - Gateway API key: back in FreeLLMAPI → Keys → copy the **unified API key** → paste here
+   - Gateway base URL: `http://127.0.0.1:31415` (no `/v1` at the end)
+   - Auth scheme: `x-api-key`
+4. Click **Test connection** — it must turn green. Then **Apply changes → Relaunch now**.
+
+### Step 6 — Test it
+
+1. At the bottom it says "auto routed to a free model". Click **Code**, choose a folder, **Trust workspace**.
+2. Type `hi` — you should get "Hello, how can I help you today?" Claude Code is now running on free models. No paywall.
+
+## Two honest things to know
+
+1. **The brain is NOT Anthropic's Opus** — the best free models (Gemini, GPT-OSS) are auto-picked. The more keys you add, the smarter and faster the setup.
+2. **FreeLLMAPI must stay OPEN** — it is the bridge between Claude and the free models. Close it and Claude has nothing to talk to. If you get an error, check this first.
+
+## Free-tier limits (read this)
+
+- Free tiers are rate-limited — there are NO unlimited free models. Expect throttling at peak hours.
+- Keys stay on YOUR computer, encrypted (AES-256-GCM). Never share your API keys or your unified key with anyone.
+- The model catalog updates from freellmapi.co: free installs get the monthly snapshot; premium ($19/yr) gets it live.
+
+## Links
+
+- FreeLLMAPI site / full model catalog: https://freellmapi.co
+- Original repo: https://github.com/tashfeenahmed/freellmapi
+- Claude Desktop: https://claude.com/download
+- Node.js: https://nodejs.org
+
+## اردو مختصر گائیڈ
+
+1. پہلے Node.js انسٹال کریں (nodejs.org) — انسٹال کے دوران چیک باکس خالی چھوڑیں۔
+2. Microsoft Store سے "Free LLM API" انسٹال کریں۔
+3. Keys میں Google AI Studio اور Groq کی فری keys شامل کریں۔
+4. claude.com/download سے Claude Desktop انسٹال کریں — سائن ان مت کریں۔
+5. Help → Troubleshooting → Enable Developer Mode → Configure Third-Party Inference → Gateway، Static API Key، base URL `http://127.0.0.1:31415`، Auth scheme `x-api-key` → Test connection (سبز ہونا چاہیے) → Apply changes → Relaunch۔
+6. `hi` لکھ کر ٹیسٹ کریں۔
+7. یاد رکھیں: FreeLLMAPI ایپ کھلی رہنی چاہیے، اور فری ماڈلز کی حد ہوتی ہے — Opus نہیں، Gemini / GPT-OSS جیسے بہترین فری ماڈلز چلتے ہیں۔
+
+---
+
+## Original FreeLLMAPI README (below, unchanged)
+
 <div align="center">
 
 # FreeLLMAPI
