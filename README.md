@@ -623,3 +623,11 @@ How each provider's ToS views a personal, single-user proxy — reviewed provide
 ## License
 
 [MIT](./LICENSE)
+
+---
+
+## 📲 Connect with AKai
+
+- **Facebook:** https://www.facebook.com/61595077535095
+- **YouTube:** https://www.youtube.com/@AKaiShortClips
+- **WhatsApp:** https://wa.me/923459191009
